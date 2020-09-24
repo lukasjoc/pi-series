@@ -1,5 +1,5 @@
 
-all: js python go c nim
+all: ts perl php js python go c nim
 
 .PHONY: all
 	
@@ -15,6 +15,14 @@ go:
 js:
 	node pi.js
 
+ts:
+	deno run pi.ts
+
 c:
 	gcc pi.c; ./a.out; rm -f ./a.out
 
+perl:
+	perl pi.pl
+
+php:
+	php pi.php
