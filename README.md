@@ -10,4 +10,21 @@ Then you run both and print them
 
 The limit should always be ``100``
 
+Versions wanted:
+	- Erlang
+	- Elixir
+	- Kotlin
+	- Java
+	- Php7
+	- Assembly
+	- Rust
+	- C++
+	- Perl
+	- Ruby
+	- Swift
+	- TypeScript (deno)
+	- and many more...
+
+So please.. If you know one of these languages then implement it.
+
 [lukasjoc](https://lukasjoc.com), 2020
