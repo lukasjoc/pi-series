@@ -1,4 +1,4 @@
-# pi
+# pi-series
 
 > this repo implements [Pi](https://en.wikipedia.org/wiki/Pi) using [infinite series](https://en.wikipedia.org/wiki/Series_(mathematics)) algorithms
 
