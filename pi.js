@@ -20,6 +20,6 @@ const pi_gls = (limit) => {
 
 (() => {
 	const limit = 100
-	console.log(`NKS: ${pi_nks(limit)}`)
-	console.log(`GLS: ${pi_gls(limit)}`)
+	console.log(`NKS: ${pi_nks(limit).toFixed(13)}`)
+	console.log(`GLS: ${pi_gls(limit).toFixed(13)}`)
 })()

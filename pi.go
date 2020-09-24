@@ -13,9 +13,9 @@ func pi_nks(limit int) (pi float64) {
 }
 
 func pi_gls(limit int) (pi float64) {
-	s := 1
+	s := 1.0
 	for i := 1; i <= limit; i += 2 {
-		pi += float64(s * (4 / i))
+		pi += float64(s*4) / float64(i)
 		s = s * (-1)
 	}
 	return pi
