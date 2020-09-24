@@ -10,4 +10,10 @@ Then you run both and print them
 
 The limit should always be ``100``
 
+The Result should be:
+```
+GLS: 3.121594652591011
+NKS: 3.1415946525910106
+```
+
 [lukasjoc](https://lukasjoc.com), 2020
