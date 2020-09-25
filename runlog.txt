@@ -1,31 +1,27 @@
 deno run pi.ts
 NKS: 3.1415907698498
 GLS: 3.1215946525910
-
 perl pi.pl
 NKS: 3.1415907698498
 GLS: 3.1215946525910
-
+javac pi.java; java pi
+NKS: 3,1415907698498
+GLS: 3,1215946525910
 php pi.php
 NKS: 3.1415907698498
 GLS: 3.1215946525910
-
 node pi.js
 NKS: 3.1415907698498
 GLS: 3.1215946525910
-
 python3 pi.py
 NKS: 3.1415946525910
 GLS: 3.1215946525910
-
 go build pi.go; ./pi; rm -f pi
 NKS: 3.1415926535878
 GLS: 3.1413926535918
-
 gcc pi.c; ./a.out; rm -f ./a.out
 NKS: 3.1415910720825
 GLS: 3.1215941905975
-
-nim c pi.nim; ./pi; rm -f pi
+nim c --hints:off pi.nim; ./pi; rm -f pi
 NKS: 3.1415907698498
 GLS: 3.1215946525910

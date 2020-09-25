@@ -4,7 +4,7 @@ const float pi_nks(const int limit) {
 	float pi = 3.0;
 	int s = 1;
 	for(int i=2; i <=limit; i+=2) {
-		pi += (float) s*4 /  (float)  (i * (i+1) * (i+2) );
+		pi += (float) s*4 / (float) (i * (i+1) * (i+2) );
 		s = s*(-1);
 	}
 	return pi;
@@ -26,5 +26,4 @@ int main(int argc, char *argv[]) {
 	printf("GLS: %.13f\n", pi_gls(limit));
 	return 0;
 }
-
 
