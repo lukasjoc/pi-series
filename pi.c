@@ -26,4 +26,3 @@ int main(int argc, char *argv[]) {
 	printf("GLS: %.13f\n", pi_gls(limit));
 	return 0;
 }
-

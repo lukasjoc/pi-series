@@ -25,7 +25,7 @@ perl:
 	perl pi.pl
 
 java:
-	javac pi.java; java pi
+	javac pi.java; java pi; rm -f pi.class
 
 v:
 	v pi.v; ./pi; rm -f pi
@@ -35,3 +35,4 @@ php:
 
 runlog:
 	make all > runlog.txt
+
