@@ -1,5 +1,5 @@
 
-all: ts perl java php js python go c nim v
+all: ts perl java php js python go c nim v ruby
 
 .PHONY: all
 
@@ -32,6 +32,9 @@ v:
 
 php:
 	php pi.php
+
+ruby:
+	ruby pi.rb
 
 runlog:
 	make all > runlog.txt
