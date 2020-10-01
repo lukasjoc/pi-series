@@ -1,5 +1,5 @@
 
-all: ts perl java php js python go c nim v rust
+all: ts perl java php js python go c nim v ruby rust
 
 .PHONY: all
 
@@ -35,6 +35,9 @@ php:
 
 rust:
 	rustc pi.rs; ./pi; rm -f pi
+
+ruby:
+	ruby pi.rb
 
 runlog:
 	make all > runlog.txt
