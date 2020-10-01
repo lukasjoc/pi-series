@@ -1,4 +1,6 @@
 
+const LIMIT: u64 = 100;
+
 fn pi_nks(limit: u64) -> f64 {
     let mut pi = 3.0;
     let mut sign = 1;
@@ -31,7 +33,6 @@ fn pi_gls(limit: u64) -> f64 {
 }
 
 fn main() {
-    let limit: u64 = 10000;
-    println!("NKS: {0:.13}", pi_nks(limit));
-    println!("GLS: {0:.13}", pi_gls(limit));
+    println!("NKS: {0:.13}", pi_nks(LIMIT));
+    println!("GLS: {0:.13}", pi_gls(LIMIT));
 }
