@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-func pi_nks(limit int) (pi float64) {
-	pi = 3.0
+func pi_nks(limit int) float64 {
+	pi := 3.0
 	s := 1
 	for i := 2; i <= limit; i += 2 {
 		pi += (float64(s*4) / float64(i*(i+1)*(i+2)))
@@ -12,7 +12,8 @@ func pi_nks(limit int) (pi float64) {
 	return pi
 }
 
-func pi_gls(limit int) (pi float64) {
+func pi_gls(limit int) float64 {
+	pi := 0.0
 	s := 1.0
 	for i := 1; i <= limit; i += 2 {
 		pi += float64(s*4) / float64(i)
@@ -22,7 +23,7 @@ func pi_gls(limit int) (pi float64) {
 }
 
 func main() {
-	const limit = 10000
+	const limit = 100
 	fmt.Printf("NKS: %.13f\n", pi_nks(limit))
 	fmt.Printf("GLS: %.13f\n", pi_gls(limit))
 }
