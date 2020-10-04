@@ -21,8 +21,8 @@ const float pi_gls(const int limit) {
 }
 
 int main(int argc, char *argv[]) {
-	const int limit = 100;
-	printf("NKS: %.13f\n", pi_nks(limit));
-	printf("GLS: %.13f\n", pi_gls(limit));
+	const int LIMIT = 100;
+	printf("NKS: %.13f\n", pi_nks(LIMIT));
+	printf("GLS: %.13f\n", pi_gls(LIMIT));
 	return 0;
 }

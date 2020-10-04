@@ -23,7 +23,7 @@ func pi_gls(limit int) float64 {
 }
 
 func main() {
-	const limit = 100
-	fmt.Printf("NKS: %.13f\n", pi_nks(limit))
-	fmt.Printf("GLS: %.13f\n", pi_gls(limit))
+	const LIMIT = 100
+	fmt.Printf("NKS: %.13f\n", pi_nks(LIMIT))
+	fmt.Printf("GLS: %.13f\n", pi_gls(LIMIT))
 }

@@ -22,9 +22,9 @@ const float pi_gls(const int limit) {
 }
 
 int main() {
-	const int limit = 100;
+	const int LIMIT = 100;
 	std::cout << std::setprecision(13);
-	std::cout << "NKS: " << pi_nks(limit) << std::endl;
-	std::cout << "GLS: " << pi_gls(limit) << std::endl;
+	std::cout << "NKS: " << pi_nks(LIMIT) << std::endl;
+	std::cout << "GLS: " << pi_gls(LIMIT) << std::endl;
 	return 0;
 }

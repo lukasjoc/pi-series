@@ -18,6 +18,6 @@ fn pi_gls(limit int) f64 {
 	return pi
 }
 
-const ( limit = 100 )
-println("NKS: ${pi_nks(limit):.13f}")
-println("GLS: ${pi_gls(limit):.13f}")
+const ( LIMIT = 100 )
+println("NKS: ${pi_nks(LIMIT):.13f}")
+println("GLS: ${pi_gls(LIMIT):.13f}")
