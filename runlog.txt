@@ -40,3 +40,6 @@ GLS: 3.121594190598
 swiftc pi.swift; ./pi; rm -f pi
 NKS: 3.1415946525910
 GLS: 3.1215946525910
+kotlinc pi.kt -include-runtime -d pi.jar; kotlin pi.jar; rm -f pi.jar
+NKS: 3,1415907698498
+GLS: 3,1215946525910
