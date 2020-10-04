@@ -1,5 +1,5 @@
 
-all: ts perl java php js python go c nim v ruby rust cpp swift
+all: ts perl java php js python go c nim v ruby rust cpp swift kotlin
 
 .PHONY: all
 
@@ -47,3 +47,6 @@ cpp:
 
 swift:
 	swiftc pi.swift; ./pi; rm -f pi
+
+kotlin:
+	kotlinc pi.kt -include-runtime -d pi.jar; kotlin pi.jar; rm -f pi.jar
