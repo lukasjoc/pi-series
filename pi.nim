@@ -16,6 +16,6 @@ proc pi_gls(l: int): float=
     s = s*(-1)
   pi
 
-const limit: int = 100
-echo fmt("NKS: {pi_nks(limit):.13f}")
-echo fmt("GLS: {pi_gls(limit):.13f}")
+const LIMIT: int = 100
+echo fmt("NKS: {pi_nks(LIMIT):.13f}")
+echo fmt("GLS: {pi_gls(LIMIT):.13f}")

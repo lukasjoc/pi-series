@@ -20,7 +20,7 @@ const pi_gls = (limit: number): number => {
 }
 
 ((): void => {
-	const limit: number = 100
-	console.log(`NKS: ${pi_nks(limit).toFixed(13)}`)
-	console.log(`GLS: ${pi_gls(limit).toFixed(13)}`)
+	const LIMIT: number = 100
+	console.log(`NKS: ${pi_nks(LIMIT).toFixed(13)}`)
+	console.log(`GLS: ${pi_gls(LIMIT).toFixed(13)}`)
 })()
