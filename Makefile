@@ -39,6 +39,8 @@ rust:
 ruby:
 	ruby pi.rb
 
+kotlin:
+	kotlinc pi.kt -include-runtime -d pi.jar; java -jar pi.jar
+
 runlog:
 	make all > runlog.txt
-
