@@ -20,9 +20,9 @@ public class pi {
 		return pi;
 	}
 
+	final static int LIMIT = 100;
 	public static void main(String[] args) {
-		final int limit = 100;
-		System.out.printf("NKS: %.13f%n", pi_nks(limit));
-		System.out.printf("GLS: %.13f%n", pi_gls(limit));
+		System.out.printf("NKS: %.13f%n", pi_nks(LIMIT));
+		System.out.printf("GLS: %.13f%n", pi_gls(LIMIT));
 	}
 }
