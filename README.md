@@ -8,6 +8,6 @@ Each language defines 2 ways of calculating Pi:
 
 Then you run both and print them
 
-The limit should always be ``100``
+The limit should always be ``100`` and a constant
 
 [lukasjoc](https://lukasjoc.com), 2020

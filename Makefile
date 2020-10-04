@@ -1,7 +1,10 @@
 
-all: ts perl java php js python go c nim v ruby rust
+all: ts perl java php js python go c nim v ruby rust cpp
 
 .PHONY: all
+
+runlog:
+	make all > runlog.txt
 
 python:
 	python3 pi.py
@@ -39,6 +42,6 @@ rust:
 ruby:
 	ruby pi.rb
 
-runlog:
-	make all > runlog.txt
+cpp:
+	g++ pi.cpp; ./a.out; rm -f a.out
 
