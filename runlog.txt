@@ -37,3 +37,6 @@ GLS: 3.1215946525910
 g++ pi.cpp; ./a.out; rm -f a.out
 NKS: 3.141591072083
 GLS: 3.121594190598
+swiftc pi.swift; ./pi; rm -f pi
+NKS: 3.1415946525910
+GLS: 3.1215946525910

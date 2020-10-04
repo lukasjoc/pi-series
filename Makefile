@@ -1,5 +1,5 @@
 
-all: ts perl java php js python go c nim v ruby rust cpp
+all: ts perl java php js python go c nim v ruby rust cpp swift
 
 .PHONY: all
 
@@ -45,3 +45,5 @@ ruby:
 cpp:
 	g++ pi.cpp; ./a.out; rm -f a.out
 
+swift:
+	swiftc pi.swift; ./pi; rm -f pi
