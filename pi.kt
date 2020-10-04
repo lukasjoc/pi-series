@@ -1,3 +1,5 @@
+const val limit = 100
+
 fun pi_nks(limit: Int): Double {
     var pi = 3.0
     var s = 1
@@ -19,7 +21,6 @@ fun pi_gls(limit: Int): Double {
 }
 
 fun main() {
-    val limit = 100
     println("NKS: ${"%.13f".format(pi_nks(limit))}")
     println("GLS: ${"%.13f".format(pi_gls(limit))}")
 }
