@@ -8,13 +8,13 @@
  * @return float
  */
 function pi_nks(int $limit): float {
-	$pi = 3.0;
-	$s = 1;
-	for($i=2; $i<=$limit; $i+=2) {
-		$pi += ($s*4/($i*($i+1)*($i+2)));
-		$s = ($s*(-1));
-	}
-	return $pi;
+  $pi = 3.0;
+  $s = 1;
+  for($i=2; $i<=$limit; $i+=2) {
+    $pi += ($s*4/($i*($i+1)*($i+2)));
+    $s = ($s*(-1));
+  }
+  return $pi;
 }
 
 /**
@@ -25,13 +25,13 @@ function pi_nks(int $limit): float {
  * @return float
  */
 function pi_gls(int $limit): float {
-	$pi = 0.0;
-	$s = 1;
-	for($i=1; $i<=$limit; $i+=2) {
-		$pi += ($s*4/$i);
-		$s = ($s*(-1));
-	}
-	return $pi;
+  $pi = 0.0;
+  $s = 1;
+  for($i=1; $i<=$limit; $i+=2) {
+    $pi += ($s*4/$i);
+    $s = ($s*(-1));
+  }
+  return $pi;
 }
 
 const LIMIT = 100;
