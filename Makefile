@@ -22,7 +22,7 @@ ts:
 	deno run pi.ts
 
 c:
-	gcc pi.c; ./a.out; rm -f ./a.out
+	gcc -g -Wall pi.c; ./a.out; rm -f ./a.out
 
 perl:
 	perl pi.pl
@@ -50,3 +50,6 @@ swift:
 
 kotlin:
 	kotlinc pi.kt -include-runtime -d pi.jar; kotlin pi.jar; rm -f pi.jar
+
+d:
+	dmd pi.d

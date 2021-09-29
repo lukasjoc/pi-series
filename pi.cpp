@@ -1,30 +1,36 @@
 #include <iostream>
 #include <iomanip>
+#include <limits>
 
-const float pi_nks(const int limit) {
-  float pi = 3.0;
+typedef std::numeric_limits< double > dbl;
+
+void pi_nks_series(unsigned int limit, double *pi) {
   int s = 1;
   for(int i=2; i <=limit; i+=2) {
-    pi += (float) s*4 / (float) (i * (i+1) * (i+2) );
-    s = s*(-1);
+	*pi += (double) s*4 / (double) (i * (i+1) * (i+2) );
+	s = s*(-1);
   }
-  return pi;
 }
 
-const float pi_gls(const int limit) {
-  float pi = 0;
+void pi_gls_series(unsigned const int limit, double *pi) {
   int s = 1;
   for(int i = 1; i <= limit; i+=2) {
-    pi += s * (float) 4/i;
-    s = s*(-1);
+	*pi += s * (double) 4/i;
+	s = s*(-1);
   }
-  return pi;
 }
 
-int main() {
-  const int LIMIT = 100;
-  std::cout << std::setprecision(13);
-  std::cout << "NKS: " << pi_nks(LIMIT) << std::endl;
-  std::cout << "GLS: " << pi_gls(LIMIT) << std::endl;
+int main(void) {
+  unsigned int const limit = 100;
+  double pi_nks_seed = 3.0;
+  double pi_gls_seed = 0.0;
+
+  pi_nks_series(limit, &pi_nks_seed);
+  pi_gls_series(limit, &pi_gls_seed);
+
+  std::cout.precision(dbl::max_digits10);
+  std::cout << "NKS: " << pi_nks_seed << std::endl;
+  std::cout << "GLS: " << pi_gls_seed << std::endl;
+
   return 0;
 }
