@@ -6,4 +6,7 @@ tags
 *.dSYM/
 *.out
 *.o
+.adb
+b~*.*
+*.ali
 

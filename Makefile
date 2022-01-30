@@ -53,3 +53,6 @@ kotlin:
 
 d:
 	dmd pi.d
+
+ada:
+	gnatmake -g pi.adb; ./pi; rm -f pi;
