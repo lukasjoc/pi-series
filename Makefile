@@ -56,3 +56,6 @@ d:
 
 ada:
 	gnatmake -g pi.adb; ./pi; rm -f pi;
+
+zig:
+	zig run pi.zig
