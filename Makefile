@@ -1,5 +1,5 @@
 
-all: ts perl java php js python go c nim v ruby rust cpp swift kotlin
+all: ts perl java php js python go c nim v ruby rust cpp swift kotlin zig jl
 
 .PHONY: all
 
@@ -51,11 +51,11 @@ swift:
 kotlin:
 	kotlinc pi.kt -include-runtime -d pi.jar; kotlin pi.jar; rm -f pi.jar
 
-d:
-	dmd pi.d
-
 ada:
 	gnatmake -g pi.adb; ./pi; rm -f pi;
 
 zig:
 	zig run pi.zig
+
+jl:
+	julia pi.jl

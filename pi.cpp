@@ -1,22 +1,22 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 #include <limits>
 
-typedef std::numeric_limits< double > dbl;
+typedef std::numeric_limits<double> dbl;
 
 void pi_nks_series(unsigned int limit, double *pi) {
   int s = 1;
-  for(int i=2; i <=limit; i+=2) {
-	*pi += (double) s*4 / (double) (i * (i+1) * (i+2) );
-	s = s*(-1);
+  for (int i = 2; i <= limit; i += 2) {
+    *pi += (double)s * 4 / (double)(i * (i + 1) * (i + 2));
+    s = s * (-1);
   }
 }
 
 void pi_gls_series(unsigned const int limit, double *pi) {
   int s = 1;
-  for(int i = 1; i <= limit; i+=2) {
-	*pi += s * (double) 4/i;
-	s = s*(-1);
+  for (int i = 1; i <= limit; i += 2) {
+    *pi += s * (double)4 / i;
+    s = s * (-1);
   }
 }
 
